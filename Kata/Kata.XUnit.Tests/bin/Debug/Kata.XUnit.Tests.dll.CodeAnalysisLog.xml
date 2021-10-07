@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests\bin\Debug\Kata.XUnit.Tests.dll">
+   <Modules>
+    <Module Name="kata.xunit.tests.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'Kata.XUnit.Tests.dll' con una clave de nombre seguro.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Marque 'Kata.XUnit.Tests.dll' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Kata.XUnit.Tests">
+       <Types>
+        <Type Name="HelloWorldTests" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HelloWorld_Should_SayHelloWorld()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests" File="HelloWorldTests.cs" Line="11">Quite los caracteres de subrayado del nombre del miembro 'HelloWorldTests.HelloWorld_Should_SayHelloWorld()'.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests" File="HelloWorldTests.cs" Line="11">El parámetro 'this' (o 'Me' en Visual Basic) de 'HelloWorldTests.HelloWorld_Should_SayHelloWorld()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Kata.XUnit.Tests.Advanced">
+       <Types>
+        <Type Name="BusinessControllerTests" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AutoFixture_ShouldBeAbleToAutoMock_DirectDependencies_WithNSubstitute(Kata.Advanced.IBusinessEntityService,Kata.Advanced.BusinessController,Kata.Advanced.BusinessEntity)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests\Advanced" File="BusinessControllerTests.cs" Line="22">Quite los caracteres de subrayado del nombre del miembro 'BusinessControllerTests.AutoFixture_ShouldBeAbleToAutoMock_DirectDependencies_WithNSubstitute(IBusinessEntityService, BusinessController, BusinessEntity)'.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests\Advanced" File="BusinessControllerTests.cs" Line="22">El parámetro 'this' (o 'Me' en Visual Basic) de 'BusinessControllerTests.AutoFixture_ShouldBeAbleToAutoMock_DirectDependencies_WithNSubstitute(IBusinessEntityService, BusinessController, BusinessEntity)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests\Advanced" File="BusinessControllerTests.cs" Line="25">En el método 'BusinessControllerTests.AutoFixture_ShouldBeAbleToAutoMock_DirectDependencies_WithNSubstitute(IBusinessEntityService, BusinessController, BusinessEntity)' visible externamente, valide el parámetro 'service' antes de usarlo.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests\Advanced" File="BusinessControllerTests.cs" Line="29">En el método 'BusinessControllerTests.AutoFixture_ShouldBeAbleToAutoMock_DirectDependencies_WithNSubstitute(IBusinessEntityService, BusinessController, BusinessEntity)' visible externamente, valide el parámetro 'sut' antes de usarlo.</Issue>
+            </Message>
+            <Message Id="2" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata.XUnit.Tests\Advanced" File="BusinessControllerTests.cs" Line="25">En el método 'BusinessControllerTests.AutoFixture_ShouldBeAbleToAutoMock_DirectDependencies_WithNSubstitute(IBusinessEntityService, BusinessController, BusinessEntity)' visible externamente, valide el parámetro 'expected' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Kata.XUnit.Tests.AutoDataAttributes">
+       <Types>
+        <Type Name="AutoConfiguredNSubstituteDataAttribute" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidUnsealedAttributes" Category="Microsoft.Performance" CheckId="CA1813" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Warning">Selle 'AutoConfiguredNSubstituteDataAttribute', si es posible.</Issue>
+          </Message>
+          <Message TypeName="MarkAttributesWithAttributeUsage" Category="Microsoft.Design" CheckId="CA1018" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="Breaking">
+           <Issue Name="Inherited" Certainty="75" Level="Warning">Aunque el atributo 'AutoConfiguredNSubstituteDataAttribute' hereda AttributeUsage del tipo base, debe considerar especificar de forma explícita AttributeUsage en el tipo para mejorar la legibilidad del código y la documentación.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="AutoNSubstituteDataAttribute" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidUnsealedAttributes" Category="Microsoft.Performance" CheckId="CA1813" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Warning">Selle 'AutoNSubstituteDataAttribute', si es posible.</Issue>
+          </Message>
+          <Message TypeName="MarkAttributesWithAttributeUsage" Category="Microsoft.Design" CheckId="CA1018" Status="Active" Created="2021-10-07 06:54:26Z" FixCategory="Breaking">
+           <Issue Name="Inherited" Certainty="75" Level="Warning">Aunque el atributo 'AutoNSubstituteDataAttribute' hereda AttributeUsage del tipo base, debe considerar especificar de forma explícita AttributeUsage en el tipo para mejorar la legibilidad del código y la documentación.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Los ensamblados deben tener nombres seguros válidos</Name>
+   <Description>Puede que el ensamblado no tenga un nombre seguro, que no sea válido o que éste sea válido únicamente por la configuración del equipo. No se puede implementar el ensamblado en este estado. Las causas más probables son: 1) El contenido del ensamblado se modificó después de firmarlo. 2) Error en el proceso de firma. 3) El ensamblado tenía firma retardada. 4) Existía una clave del Registro que permitió que se realizara la comprobación (de lo contrario no se hubiera realizado).</Description>
+   <Resolution Name="NoStrongName">Firme {0} con una clave de nombre seguro.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnsealedAttributes" Category="Microsoft.Performance" CheckId="CA1813">
+   <Name>Evitar atributos no sellados</Name>
+   <Description>Selle los tipos de atributos para obtener un mejor rendimiento. Al sellar los tipos de atributos se acelera el rendimiento durante la reflexión en atributos personalizados.</Description>
+   <Resolution Name="Default">Selle {0}, si es posible.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182267.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Los identificadores no deberían contener subrayado</Name>
+   <Description>No utilice subrayado al especificar identificadores. Algunos identificadores de Visual Studio generados para aplicaciones contienen caracteres de subrayado. En general, se deberían evitar los caracteres de subrayado en identificadores públicos.</Description>
+   <Resolution Name="Member">Quite los caracteres de subrayado del nombre del miembro {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182245.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Marque los ensamblados con CLSCompliantAttribute</Name>
+   <Description>Los ensamblados deben establecer explícitamente ser conformes a CLS usando el atributo CLSCompliant. Un ensamblado sin este atributo no es conforme a CLS. Los ensamblados, módulos y tipos pueden ser conformes a CLS incluso si alguna parte del ensamblado, módulo o tipo no son conformes a CLS. Se aplican las siguientes reglas: 1) Si el elemento está marcado como CLSCompliant, cualquier miembro no compatible debe tener el atributo CLSCompliant presente con el argumento establecido como false. 2) Se debe proporcionar un miembro alternativo conforme a CLS comparable con cada miembro que no sea conforme a CLS.</Description>
+   <Resolution Name="Default">Marque {0} con CLSCompliant(true) porque expone tipos visibles externamente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAttributesWithAttributeUsage" Category="Microsoft.Design" CheckId="CA1018">
+   <Name>Marcar atributos con AttributeUsageAttribute</Name>
+   <Description>El atributo AttributeUsage especifica los destinos válidos para el atributo (consulte System.AttributeTargets) y si un atributo puede aparecer en un destino más de una vez y si éste es heredable.</Description>
+   <Resolution Name="Inherited">Aunque el atributo {0} hereda AttributeUsage del tipo base, debe considerar especificar de forma explícita AttributeUsage en el tipo para mejorar la legibilidad del código y la documentación.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182158.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error, Warning</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Marcar el miembro como estático</Name>
+   <Description>Los métodos que no tienen acceso a los datos de instancias o a los métodos de instancias de llamadas se pueden marcar como estáticos (compartidos en VB). Después de esto, el compilador emitirá sitios de llamadas no virtuales para estos miembros, lo que impedirá la comprobación en tiempo de ejecución de cada llamada que garantice que el puntero del objeto actual no es nulo. Esto puede dar lugar a un mejor rendimiento en el código sensible al rendimiento. En algunos casos, la imposibilidad de tener acceso a la instancia del objeto actual representa un problema de corrección.</Description>
+   <Resolution Name="Default">El parámetro 'this' (o 'Me' en Visual Basic) de {0} no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validar argumentos de métodos públicos</Name>
+   <Description>Todos los argumentos de referencia pasados a métodos visibles externamente deben comprobarse para ver si son NULL (Nothing en VB). Si procede, produzca una excepción System.ArgumentNullException cuando el argumento sea NULL.</Description>
+   <Resolution Name="Default">En el método {0} visible externamente, valide el parámetro '{1}' antes de usarlo.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoría</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Contraer todo</String>
+  <String Key="CheckId">Comprobar id.</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">errores</String>
+  <String Key="ExpandAll">Expandir todo</String>
+  <String Key="Help">Ayuda</String>
+  <String Key="Line">Línea</String>
+  <String Key="Messages">mensajes</String>
+  <String Key="LocationNotStoredInPdb">[Ubicación no almacenada en Pdb]</String>
+  <String Key="Project">Proyecto</String>
+  <String Key="Resolution">Resolución</String>
+  <String Key="Rule">Regla</String>
+  <String Key="RuleFile">Archivo de regla</String>
+  <String Key="RuleDescription">Descripción de la regla</String>
+  <String Key="Source">Origen</String>
+  <String Key="Status">Estado</String>
+  <String Key="Target">Círculos concéntricos</String>
+  <String Key="Warning">Advertencia</String>
+  <String Key="Warnings">advertencias</String>
+  <String Key="ReportTitle">Informe de análisis del código</String>
+ </Localized>
+</FxCopReport>

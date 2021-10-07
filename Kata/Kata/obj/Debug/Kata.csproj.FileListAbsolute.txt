@@ -1,0 +1,8 @@
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\bin\Debug\Kata.dll
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\bin\Debug\Kata.pdb
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\bin\Debug\Kata.dll.CodeAnalysisLog.xml
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\bin\Debug\Kata.dll.lastcodeanalysissucceeded
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\obj\Debug\Kata.csproj.AssemblyReference.cache
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\obj\Debug\Kata.csproj.CoreCompileInputs.cache
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\obj\Debug\Kata.dll
+C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\obj\Debug\Kata.pdb
