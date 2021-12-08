@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="e:\programasinstaladoswindows\visualstudiocomiunity\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="16.0">
  <Targets>
-  <Target Name="E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.MSTest.Tests.dll">
+  <Target Name="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.MSTest.Tests.dll">
    <Modules>
     <Module Name="kata.mstest.tests.dll">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'Kata.MSTest.Tests.dll' con una clave de nombre seguro.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Marque 'Kata.MSTest.Tests.dll' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
       </Message>
      </Messages>
@@ -20,8 +20,8 @@
          <Members>
           <Member Name="#HelloWorld_Should_SayHelloWorld()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="95" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests" File="HelloWorldTests.cs" Line="12">Quite los caracteres de subrayado del nombre del miembro 'HelloWorldTests.HelloWorld_Should_SayHelloWorld()'.</Issue>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="HelloWorldTests.cs" Line="12">Quite los caracteres de subrayado del nombre del miembro 'HelloWorldTests.HelloWorld_Should_SayHelloWorld()'.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -31,17 +31,43 @@
          <Members>
           <Member Name="#cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Le" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="11">Corrija el uso de mayúsculas y minúsculas en 'Le' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'LE'.</Issue>
+            <Message Id="Le" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="12">Corrija el uso de mayúsculas y minúsculas en 'Le' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'LE'.</Issue>
             </Message>
-            <Message Id="Se" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="11">Corrija el uso de mayúsculas y minúsculas en 'Se' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'SE'.</Issue>
+            <Message Id="Se" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="12">Corrija el uso de mayúsculas y minúsculas en 'Se' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'SE'.</Issue>
             </Message>
-            <Message Id="Un" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="11">Corrija el uso de mayúsculas y minúsculas en 'Un' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'UN'.</Issue>
+            <Message Id="Un" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="12">Corrija el uso de mayúsculas y minúsculas en 'Un' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'UN'.</Issue>
             </Message>
-            <Message Id="cuadno" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="11">Corrija el uso de mayúsculas y minúsculas en 'cuadno' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'Cuadno'.</Issue>
+            <Message Id="cuadno" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="12">Corrija el uso de mayúsculas y minúsculas en 'cuadno' en el nombre del miembro 'MarsRoverTest.cuadnoCreoUnRoverSeLeAsignaUnaPosicionOrigenYUnaDireccionADondeMira()' cambiándolo a 'Cuadno'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="De" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'De' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'DE'.</Issue>
+            </Message>
+            <Message Id="En" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'En' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'EN'.</Issue>
+            </Message>
+            <Message Id="Se" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'Se' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'SE'.</Issue>
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'Se' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'SE'.</Issue>
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'Se' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'SE'.</Issue>
+            </Message>
+            <Message Id="Un" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'Un' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'UN'.</Issue>
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'Un' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'UN'.</Issue>
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'Un' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'UN'.</Issue>
+            </Message>
+            <Message Id="Va" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'Va' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'VA'.</Issue>
+            </Message>
+            <Message Id="cuando" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests" File="MarsRoverTest.cs" Line="25">Corrija el uso de mayúsculas y minúsculas en 'cuando' en el nombre del miembro 'MarsRoverTest.cuandoSeVaAEjecutarUnComandoEnUnRoverSeVerificaQueSeRecibeUnArrayDeCaracteres()' cambiándolo a 'Cuando'.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -55,8 +81,8 @@
          <Members>
           <Member Name="#BusinessController_Add_ShouldReturnTheAddedEntity()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2021-12-08 03:41:12Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="95" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\Advanced" File="BusinessControllerTests.cs" Line="12">Quite los caracteres de subrayado del nombre del miembro 'BusinessControllerTests.BusinessController_Add_ShouldReturnTheAddedEntity()'.</Issue>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2021-12-08 04:09:02Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata.MSTest.Tests\Advanced" File="BusinessControllerTests.cs" Line="12">Quite los caracteres de subrayado del nombre del miembro 'BusinessControllerTests.BusinessController_Add_ShouldReturnTheAddedEntity()'.</Issue>
             </Message>
            </Messages>
           </Member>

@@ -14,3 +14,11 @@ E:\Espacio de trabajo\kataMarsRover\Kata\Kata\obj\Debug\Kata.csproj.AssemblyRefe
 E:\Espacio de trabajo\kataMarsRover\Kata\Kata\obj\Debug\Kata.csproj.CoreCompileInputs.cache
 E:\Espacio de trabajo\kataMarsRover\Kata\Kata\obj\Debug\Kata.dll
 E:\Espacio de trabajo\kataMarsRover\Kata\Kata\obj\Debug\Kata.pdb
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\bin\Debug\Kata.dll
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\bin\Debug\Kata.pdb
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\bin\Debug\Kata.dll.CodeAnalysisLog.xml
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\bin\Debug\Kata.dll.lastcodeanalysissucceeded
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\obj\Debug\Kata.csproj.AssemblyReference.cache
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\obj\Debug\Kata.csproj.CoreCompileInputs.cache
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\obj\Debug\Kata.dll
+C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\obj\Debug\Kata.pdb
