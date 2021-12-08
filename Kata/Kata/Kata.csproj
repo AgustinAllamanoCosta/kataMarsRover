@@ -48,6 +48,7 @@
     <Compile Include="Advanced\IBusinessEntityService.cs" />
     <Compile Include="Advanced\IRepository.cs" />
     <Compile Include="HelloWorld.cs" />
+    <Compile Include="MarsRover.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

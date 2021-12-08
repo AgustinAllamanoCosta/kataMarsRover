@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<?xml-stylesheet type="text/xsl" href="e:\programasinstaladoswindows\visualstudiocomiunity\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="16.0">
  <Namespaces>
   <Namespace Name="Kata">
    <Messages>
-    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2021-10-07 06:47:28Z" FixCategory="Breaking">
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="Breaking">
      <Issue Certainty="50" Level="Warning">Considere combinar los tipos definidos en 'Kata' con otro espacio de nombres.</Issue>
     </Message>
    </Messages>
   </Namespace>
  </Namespaces>
  <Targets>
-  <Target Name="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata\bin\Debug\Kata.dll">
+  <Target Name="E:\Espacio de trabajo\kataMarsRover\Kata\Kata\bin\Debug\Kata.dll">
    <Modules>
     <Module Name="kata.dll">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-10-07 06:47:28Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'Kata.dll' con una clave de nombre seguro.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-10-07 06:47:28Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Marque 'Kata.dll' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
       </Message>
      </Messages>
@@ -29,8 +29,29 @@
          <Members>
           <Member Name="#SayHelloWorld()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2021-10-07 06:47:28Z" FixCategory="DependsOnFix">
-             <Issue Certainty="95" Level="Warning" Path="C:\repo\kata-bootstraps\csharp\dotnet\Kata\Kata" File="HelloWorld.cs" Line="12">El parámetro 'this' (o 'Me' en Visual Basic) de 'HelloWorld.SayHelloWorld()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="HelloWorld.cs" Line="12">El parámetro 'this' (o 'Me' en Visual Basic) de 'HelloWorld.SayHelloWorld()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MarsRover" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#direccion" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="direccion" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="14">Corrija el uso de mayúsculas y minúsculas en 'direccion' en el nombre del miembro 'MarsRover.direccion' cambiándolo a 'Direccion'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#posicion" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="posicion" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="13">Corrija el uso de mayúsculas y minúsculas en 'posicion' en el nombre del miembro 'MarsRover.posicion' cambiándolo a 'Posicion'.</Issue>
+            </Message>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="13">Cambie 'MarsRover.posicion' para que devuelva una colección o conviértalo en un método.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -44,7 +65,7 @@
          <Members>
           <Member Name="#Get(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-10-07 06:47:28Z" FixCategory="Breaking">
+            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="Breaking">
              <Issue Name="Member" Certainty="95" Level="Error">Cambie el nombre del miembro virtual o de interfaz 'IBusinessEntityService.Get(int)' para que no esté en conflicto con la palabra clave reservada del lenguaje 'Get'. El uso de una palabra clave como nombre de a un miembro virtual o de interfaz dificulta que usuarios de otros lenguajes invaliden o implementen el miembro.</Issue>
             </Message>
            </Messages>
@@ -55,14 +76,14 @@
          <Members>
           <Member Name="#Get(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-10-07 06:47:28Z" FixCategory="Breaking">
+            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="Breaking">
              <Issue Name="Member" Certainty="95" Level="Error">Cambie el nombre del miembro virtual o de interfaz 'IRepository&lt;T&gt;.Get(int)' para que no esté en conflicto con la palabra clave reservada del lenguaje 'Get'. El uso de una palabra clave como nombre de a un miembro virtual o de interfaz dificulta que usuarios de otros lenguajes invaliden o implementen el miembro.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Update(System.Int32,!0)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Entity" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-10-07 06:47:28Z" FixCategory="Breaking">
+            <Message Id="Entity" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 03:41:09Z" FixCategory="Breaking">
              <Issue Name="MemberParameter" Certainty="85" Level="Error">En el miembro 'IRepository&lt;T&gt;.Update(int, T)', corrija el uso de mayúsculas y minúsculas en 'Entity' en el nombre del parámetro 'Entity' cambiándolo a 'entity'.</Issue>
             </Message>
            </Messages>
@@ -100,6 +121,7 @@
   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
    <Name>Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente</Name>
    <Description>Los identificadores de tipo, espacio de nombres y miembro usan las mayúsculas y minúsculas como en Pascal. Los identificadores de parámetro usan las mayúsculas y minúsculas como en Camel. Los acrónimos de dos letras en estos identificadores deben ir en mayúsculas; por ejemplo, use System.IO en lugar de System.Io. Los acrónimos de tres o más letras deben usar las mayúsculas y minúsculas como en Pascal; por ejemplo, use System.Xml en lugar de System.XML. La convención de mayúsculas y minúsculas Pascal pone en mayúscula la primera letra de cada palabra, como en BackColor. La convención de mayúsculas y minúsculas Camel pone en minúscula la primera letra de la primera palabra y, en mayúscula, la primera letra de las palabras siguientes, como en backgroundColor. Si bien puede ser una práctica común para algunos acrónimos de dos letras no ponerlos totalmente en mayúsculas, no se deben excluir las infracciones de esta regla por esta razón. Por ejemplo, 'DbConnection', es común pero incorrecto; use DBConnection. Una infracción de esta regla puede ser necesaria por compatibilidad con esquemas de símbolos no administrados existentes. En general, sin embargo, estos símbolos no deberían estar visibles fuera del ensamblado que los usa.</Description>
+   <Resolution Name="Member">Corrija el uso de mayúsculas y minúsculas en '{0}' en el nombre del miembro {1} cambiándolo a '{2}'.</Resolution>
    <Resolution Name="MemberParameter">En el miembro {0}, corrija el uso de mayúsculas y minúsculas en '{1}' en el nombre del parámetro {2} cambiándolo a '{3}'.</Resolution>
    <Owner />
    <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
@@ -135,6 +157,16 @@
    <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+   <Name>Las propiedades no deberían devolver matrices</Name>
+   <Description>Las propiedades que devuelven matrices suelen codificar ineficiencias. Es aconsejable utilizar una colección o convertir esto en un método. Consulte las pautas de diseño para obtener más información.</Description>
+   <Resolution Name="Default">Cambie {0} para que devuelva una colección o conviértalo en un método.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/0fss9skc.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
    <File Name="performancerules.dll" Version="16.0.0.0" />
   </Rule>
  </Rules>

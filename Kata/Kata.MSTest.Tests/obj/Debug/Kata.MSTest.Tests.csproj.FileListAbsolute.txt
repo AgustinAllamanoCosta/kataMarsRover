@@ -1,0 +1,15 @@
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\obj\Debug\Kata.MSTest.Tests.csproj.AssemblyReference.cache
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\obj\Debug\Kata.MSTest.Tests.csproj.CoreCompileInputs.cache
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.MSTest.Tests.dll
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.MSTest.Tests.pdb
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.MSTest.Tests.dll.CodeAnalysisLog.xml
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.MSTest.Tests.dll.lastcodeanalysissucceeded
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.dll
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Moq.dll
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Kata.pdb
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\Moq.xml
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\obj\Debug\Kata.MSTest.Tests.csproj.CopyComplete
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\obj\Debug\Kata.MSTest.Tests.dll
+E:\Espacio de trabajo\kataMarsRover\Kata\Kata.MSTest.Tests\obj\Debug\Kata.MSTest.Tests.pdb

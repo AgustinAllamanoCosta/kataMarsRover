@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Advanced\BusinessControllerTests.cs" />
     <Compile Include="HelloWorldTests.cs" />
+    <Compile Include="MarsRoverTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
