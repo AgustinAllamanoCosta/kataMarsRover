@@ -33,5 +33,21 @@ namespace Kata.MSTest.Tests
 
             Assert.IsTrue(resultado);
         }
+
+        [TestMethod]
+        public void cuandoSeLePasaElComandoAvanzarJuntoConUnNumeroSeEsperaQueSeMuevaNPosiciones() 
+        {
+            string[] comandoAvanzarCinco = { "avanzarParaAdelante 5" };
+
+            int[] posicionInicial = { 0, 0 };
+            int[] posicionFinal = { 5, 0 };
+            string direccion = "N";
+
+            MarsRover rover = new MarsRover(posicionInicial, direccion);
+
+            rover.ejecutarComandos(comandoAvanzarCinco);
+
+            Assert.AreEqual(posicionFinal[0], rover.posicion[0]);
+        }
     }
 }

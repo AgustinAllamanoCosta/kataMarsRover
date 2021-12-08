@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<?xml-stylesheet type="text/xsl" href="e:\programasinstaladoswindows\visualstudiocomiunity\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="16.0">
  <Namespaces>
   <Namespace Name="Kata">
    <Messages>
-    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
      <Issue Certainty="50" Level="Warning">Considere combinar los tipos definidos en 'Kata' con otro espacio de nombres.</Issue>
     </Message>
    </Messages>
   </Namespace>
  </Namespaces>
  <Targets>
-  <Target Name="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata\bin\Debug\Kata.dll">
+  <Target Name="E:\Espacio de trabajo\kataMarsRover\Kata\Kata\bin\Debug\Kata.dll">
    <Modules>
     <Module Name="kata.dll">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'Kata.dll' con una clave de nombre seguro.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Marque 'Kata.dll' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
       </Message>
      </Messages>
@@ -29,8 +29,8 @@
          <Members>
           <Member Name="#SayHelloWorld()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="DependsOnFix">
-             <Issue Certainty="95" Level="Warning" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata" File="HelloWorld.cs" Line="12">El parámetro 'this' (o 'Me' en Visual Basic) de 'HelloWorld.SayHelloWorld()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="HelloWorld.cs" Line="12">El parámetro 'this' (o 'Me' en Visual Basic) de 'HelloWorld.SayHelloWorld()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -40,28 +40,31 @@
          <Members>
           <Member Name="#direccion" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="direccion" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="14">Corrija el uso de mayúsculas y minúsculas en 'direccion' en el nombre del miembro 'MarsRover.direccion' cambiándolo a 'Direccion'.</Issue>
+            <Message Id="direccion" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="14">Corrija el uso de mayúsculas y minúsculas en 'direccion' en el nombre del miembro 'MarsRover.direccion' cambiándolo a 'Direccion'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ejecutarComandos(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="ejecutar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="23">Corrija el uso de mayúsculas y minúsculas en 'ejecutar' en el nombre del miembro 'MarsRover.ejecutarComandos(object)' cambiándolo a 'Ejecutar'.</Issue>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="29">'comandos', un parámetro, se convierte en el tipo 'string[]' varias veces en el método 'MarsRover.ejecutarComandos(object)'. Almacene en caché el resultado del operador 'as' o dirija la conversión con el fin de eliminar la instrucción castclass redundante.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="DependsOnFix">
-             <Issue Certainty="95" Level="Warning" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="23">El parámetro 'this' (o 'Me' en Visual Basic) de 'MarsRover.ejecutarComandos(object)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            <Message Id="ejecutar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="23">Corrija el uso de mayúsculas y minúsculas en 'ejecutar' en el nombre del miembro 'MarsRover.ejecutarComandos(object)' cambiándolo a 'Ejecutar'.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="34">Puesto que el comportamiento de 'int.Parse(string)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'MarsRover.ejecutarComandos(object)' por una llamada a 'int.Parse(string, IFormatProvider)'. Si el resultado de 'int.Parse(string, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#posicion" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="posicion" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="13">Corrija el uso de mayúsculas y minúsculas en 'posicion' en el nombre del miembro 'MarsRover.posicion' cambiándolo a 'Posicion'.</Issue>
+            <Message Id="posicion" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="13">Corrija el uso de mayúsculas y minúsculas en 'posicion' en el nombre del miembro 'MarsRover.posicion' cambiándolo a 'Posicion'.</Issue>
             </Message>
-            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
-             <Issue Certainty="50" Level="Warning" Path="C:\Users\cunda\Documents\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="13">Cambie 'MarsRover.posicion' para que devuelva una colección o conviértalo en un método.</Issue>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="E:\Espacio de trabajo\kataMarsRover\Kata\Kata" File="MarsRover.cs" Line="13">Cambie 'MarsRover.posicion' para que devuelva una colección o conviértalo en un método.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -75,7 +78,7 @@
          <Members>
           <Member Name="#Get(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
+            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
              <Issue Name="Member" Certainty="95" Level="Error">Cambie el nombre del miembro virtual o de interfaz 'IBusinessEntityService.Get(int)' para que no esté en conflicto con la palabra clave reservada del lenguaje 'Get'. El uso de una palabra clave como nombre de a un miembro virtual o de interfaz dificulta que usuarios de otros lenguajes invaliden o implementen el miembro.</Issue>
             </Message>
            </Messages>
@@ -86,14 +89,14 @@
          <Members>
           <Member Name="#Get(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
+            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
              <Issue Name="Member" Certainty="95" Level="Error">Cambie el nombre del miembro virtual o de interfaz 'IRepository&lt;T&gt;.Get(int)' para que no esté en conflicto con la palabra clave reservada del lenguaje 'Get'. El uso de una palabra clave como nombre de a un miembro virtual o de interfaz dificulta que usuarios de otros lenguajes invaliden o implementen el miembro.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Update(System.Int32,!0)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Entity" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:08:59Z" FixCategory="Breaking">
+            <Message Id="Entity" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2021-12-08 04:52:13Z" FixCategory="Breaking">
              <Issue Name="MemberParameter" Certainty="85" Level="Error">En el miembro 'IRepository&lt;T&gt;.Update(int, T)', corrija el uso de mayúsculas y minúsculas en 'Entity' en el nombre del parámetro 'Entity' cambiándolo a 'entity'.</Issue>
             </Message>
            </Messages>
@@ -127,6 +130,16 @@
    <Email>[none]</Email>
    <MessageLevel Certainty="50">Warning</MessageLevel>
    <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>No convertir innecesariamente</Name>
+   <Description>Evite duplicar conversiones cuando sea posible, ya que conllevan un coste asociado.</Description>
+   <Resolution Name="Parameter">{0}, un parámetro, se convierte en el tipo {1} varias veces en el método {2}. Almacene en caché el resultado del operador 'as' o dirija la conversión con el fin de eliminar la instrucción {3} redundante.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182271.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
   </Rule>
   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
    <Name>Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente</Name>
@@ -178,6 +191,16 @@
    <Email>[none]</Email>
    <MessageLevel Certainty="50">Warning</MessageLevel>
    <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Especificar IFormatProvider</Name>
+   <Description>Si existe una sobrecarga que toma un argumento IFormatProvider, se debe llamar siempre en favor de una sobrecarga que no lo haga. Algunos métodos del runtime convierten un valor a o desde una representación de cadena y toman un parámetro de cadena que contiene uno o varios caracteres, denominados especificadores de formato, que indican cómo se debe convertir el valor. Si el significado del especificador de formato varía por referencia cultural, un objeto de formato proporciona los caracteres usados en la representación de cadena. En escenarios donde el comportamiento de ordenación y comparación no debería cambiar nunca entre referecias culturales, especifique CultureInfo.InvariantCulture; de lo contrario, especifique CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} estará basado en los datos proporcionados por el usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="16.0.0.0" />
   </Rule>
  </Rules>
  <Localized>

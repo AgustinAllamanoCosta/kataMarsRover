@@ -21,12 +21,24 @@ namespace Kata
 
         public bool ejecutarComandos(object comandos)
         {
-            if (comandos is string[])
+            if (!(comandos is string[]))
             {
-                return true;
+                return false;
             }
 
-            return false;
+            string[] comandoAEjecutar = ((string[])comandos)[0].Split(' ');
+
+            switch (comandoAEjecutar[0])
+            {
+                case "avanzarParaAdelante":
+                    posicion[0] = posicion[0] + int.Parse(comandoAEjecutar[1]);    
+                    break;
+                default:
+                    return false;
+                    break;
+            }
+
+            return true;
         }
     }
 }
